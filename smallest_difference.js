@@ -34,14 +34,14 @@ function smallestDifferenceV2(a, b)
 	let i = 0, e = 0;
 
 	let first = true;
-	let result = 0;
+	let smallest = 0;
 
 	while (i < a.length && e < b.length)
 	{
 		let diff = Math.abs(a[i] - b[e]);
-		if (diff < result || first)
+		if (diff < smallest || first)
 		{
-			result = diff;
+			smallest = diff;
 			first = false;
 		}
 		//voy moviendo los valores mas chicos
@@ -51,5 +51,5 @@ function smallestDifferenceV2(a, b)
 			e++;
 	}
  
-    return result;
+    return smallest;
 }

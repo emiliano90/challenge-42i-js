@@ -6,14 +6,14 @@ function smallestNotChange(coins)
 {
 	coins.sort((a,b) => a - b);
 	
-	let currentValue = 0;
-	for (let i = 0; i < coins.lenght; i++) 
+	let sum = 0;
+	for (let i = 0; i < coins.length; i++) 
 	{
-		if (coins[i] > currentValue + 1)
-			return currentValue + 1;
+		if (coins[i] > sum + 1)
+			return sum + 1;
 		
-		currentValue += coins[i];
+		sum += coins[i];
 	}
 	
-	return currentValue + 1;
+	return sum + 1;
 }
