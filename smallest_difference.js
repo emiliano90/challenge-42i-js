@@ -26,8 +26,8 @@ function smallestDifference(a, b)
 //idem mas eficiente
 function smallestDifferenceV2(a, b)
 {
-     
-    //ordeno los arrays
+	
+	//ordeno los arrays
 	a.sort((a1, a2) => a1 - a2);
 	b.sort((b1, b2) => b1 - b2);
 
@@ -50,6 +50,6 @@ function smallestDifferenceV2(a, b)
 		else
 			e++;
 	}
- 
-    return smallest;
+
+	return smallest;
 }
